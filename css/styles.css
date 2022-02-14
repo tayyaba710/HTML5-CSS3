@@ -103,7 +103,7 @@ a {
 .badge--small {
   font-size: 1.6rem;
 }
-@media screen and (min-width: 1024) {
+@media screen and (min-width: 1024px) {
   .badge {
     font-size: 1.5rem;
   }
@@ -292,7 +292,7 @@ a {
 
 /* Plans */
 .plan {
-  transition: transfrom 0.2s ease-out;
+  transition: transform 0.2s ease-out;
 }
 
 .plan__name {
@@ -466,8 +466,12 @@ a {
 }
 /* callouts */
 .callout {
+  margin: 0 7rem;
   padding: 4rem;
-  border-raius: 5px;
+  border-radius: 8px;
+  position: relative;
+  bottom: -5rem;
+  z-index: 1;
 }
 .callout--primary {
   background: var(--color-primary);
@@ -568,6 +572,10 @@ a {
 .block--skewed-left {
   padding-bottom: calc(var(--padding-vertical) + 4rem);
   clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+}
+.block--position {
+  position: relative;
+  margin: 0 5rem;
 }
 
 .container {
